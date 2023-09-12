@@ -1,4 +1,6 @@
-let nameCity = prompt('Введите название города')
-let age = 2023 - prompt('Введите год основания')
-let people = prompt('Введите количество начеления')
-alert ("Городу "+ nameCity +" исполнилось "+ age +" лет с момента его образования. Население - "+ people +" человек");
+let input = prompt('Введите число')
+let blocks = document.querySelector('.blocks')
+
+for (let i = 0; i < input; i++) {
+    blocks.insertAdjacentHTML('beforeend', "<div class = 'box'> " + (i+1) + " </div>")
+}
